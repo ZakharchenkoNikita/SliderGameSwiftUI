@@ -10,14 +10,12 @@ import SwiftUI
 struct ScoreSlider: UIViewRepresentable {
     
     @Binding var sliderValue: Float
-    
-    var minimumValue: Float
-    var maximumValue: Float
-    
+    @Binding var alpha: CGFloat
+
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
-        slider.minimumValue = minimumValue
-        slider.maximumValue = maximumValue
+        slider.minimumValue = 1
+        slider.maximumValue = 100
         slider.addTarget(
             context.coordinator,
             action: #selector(Coordinator.didValueChanged),
@@ -29,6 +27,7 @@ struct ScoreSlider: UIViewRepresentable {
     
     func updateUIView(_ uiView: UISlider, context: Context) {
         uiView.value = sliderValue
+        uiView.thumbTintColor = UIColor(red: 1, green: 0, blue: 0, alpha: alpha / 100)
     }
     
     func makeCoordinator() -> Coordinator {
@@ -52,6 +51,6 @@ extension ScoreSlider {
 
 struct ScoreSlider_Previews: PreviewProvider {
     static var previews: some View {
-        ScoreSlider(sliderValue: .constant(10), minimumValue: 0, maximumValue: 100)
+        ScoreSlider(sliderValue: .constant(10), alpha: .constant(5))
     }
 }

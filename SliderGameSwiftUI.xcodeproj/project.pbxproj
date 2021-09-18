@@ -12,6 +12,7 @@
 		1141AFA926F50F3100E285AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1141AFA826F50F3100E285AB /* Assets.xcassets */; };
 		1141AFAC26F50F3100E285AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1141AFAB26F50F3100E285AB /* Preview Assets.xcassets */; };
 		1141AFB426F5173000E285AB /* ScoreSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141AFB326F5173000E285AB /* ScoreSlider.swift */; };
+		1141AFB626F532B300E285AB /* ScoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1141AFB526F532B300E285AB /* ScoreGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1141AFAB26F50F3100E285AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1141AFAD26F50F3100E285AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1141AFB326F5173000E285AB /* ScoreSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreSlider.swift; sourceTree = "<group>"; };
+		1141AFB526F532B300E285AB /* ScoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				1141AFA426F50F3000E285AB /* SliderGameSwiftUIApp.swift */,
 				1141AFA626F50F3000E285AB /* ContentView.swift */,
 				1141AFB326F5173000E285AB /* ScoreSlider.swift */,
+				1141AFB526F532B300E285AB /* ScoreGenerator.swift */,
 				1141AFA826F50F3100E285AB /* Assets.xcassets */,
 				1141AFAD26F50F3100E285AB /* Info.plist */,
 				1141AFAA26F50F3100E285AB /* Preview Content */,
@@ -143,6 +146,7 @@
 			files = (
 				1141AFA726F50F3000E285AB /* ContentView.swift in Sources */,
 				1141AFA526F50F3000E285AB /* SliderGameSwiftUIApp.swift in Sources */,
+				1141AFB626F532B300E285AB /* ScoreGenerator.swift in Sources */,
 				1141AFB426F5173000E285AB /* ScoreSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
